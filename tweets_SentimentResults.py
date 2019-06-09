@@ -23,10 +23,12 @@ senti=[]
 for i in range(len(FuzzyPos)):
     t=max(FuzzyPos[i],FuzzyNeg[i])
     result.append(t)
-    if FuzzyPos[i]==t:
-        senti.append("Pos")
+    if FuzzyPos[i]==FuzzyNeg[i]==t:
+        senti.append("Neu")
+    elif FuzzyPos[i]==t:
+        senti.append("P")
     else:
-        senti.append("Neg")
+        senti.append("N")
    
 print("\n Result:")
 print(result)
