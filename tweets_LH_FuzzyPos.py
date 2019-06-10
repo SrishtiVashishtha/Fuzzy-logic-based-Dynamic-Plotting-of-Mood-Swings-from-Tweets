@@ -105,7 +105,7 @@ for j in range(senlen):
     for i in range(len(lp)):
         p=pow(lp[i],0.5)
         mlpos.append(round(p,4))
-#    print("\n Not Very Positive")
+#    print("\n More or less Positive")
 #    print(mlpos)
     
     #NOT VERY NEGATIVE , MORE OR LESS NEGATIVE
